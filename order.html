@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="" width="100px">
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="order">
+            <h2>Оформление заказа</h2>
+
+     <form action="save_order.php" method="post">
+        <label>Ваше имя:</label>
+        <input type="text" name="name" required><br>
+
+        <label>Ваш телефон:</label>
+        <input type="tel" name="phone" required><br>
+
+        <label>Выберите букет:</label>
+        <select name="bouquet">
+            <option>101 роза – 140 000тг</option>
+            <option>51 роза – 68 000тг</option>
+            <!-- можно добавить остальные -->
+        </select><br>
+
+        <label>Дополнительные пожелания:</label><br>
+        <textarea name="message" placeholder="Напишите ваши пожелания"></textarea><br>
+
+        <button type="submit">Отправить заказ</button>
+    </form>
+        </div>
+    </main>
+</body>
+</html>
